@@ -44,9 +44,10 @@ sum_carats
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
-
-
+diamond_summary <- diamonds %>% 
+  group_by(cut) %>% 
+  summarize(mean_depth = mean(depth),
+            mean_price = mean(price),
+            cut_count = n())
+## Yay!!
 ```
