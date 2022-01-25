@@ -49,4 +49,5 @@ diamond_summary <- diamonds %>%
   summarize(mean_depth = mean(depth),
             mean_price = mean(price),
             cut_count = n())
+## Yay!!
 ```
