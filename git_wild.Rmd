@@ -16,7 +16,8 @@ library(tidyverse)
 ### In this code chunk, start with the diamonds dataset (built in to
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
-
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point()
 
 ```
 
@@ -32,11 +33,11 @@ diamond_subset <- diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-diamond_summary <- diamonds %>% 
-  group_by(cut) %>% 
-  summarize(mean_depth = mean(depth),
-          mean_cost = mean(price),
-          count_cut = n())
+### Both partners - delete this comment, then write some code here
+### to plot, summarize, calculate something simple using the diamonds
+### dataset.
+sum_carats <- sum(diamonds$carat)
+sum_carats
 
 ```
 
