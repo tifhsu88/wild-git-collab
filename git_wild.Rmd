@@ -47,6 +47,6 @@ sum_carats
 ### Both partners - delete this comment, then write some code here
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
-
-
+sum_price <- sum(diamonds$price)
+sum_price
 ```
